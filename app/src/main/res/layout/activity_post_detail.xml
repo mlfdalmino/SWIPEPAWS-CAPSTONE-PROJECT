@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_navigation_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/profileurl"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="User Profile Picture" />
+
+
+                <TextView
+                    android:id="@+id/textViewAuthor"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="Username"
+                    android:textAllCaps="true"
+                    android:gravity="center_vertical|start"
+                    android:textColor="#FD8D14" />
+
+                <ImageView
+                    android:id="@+id/options_menu"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="8dp"
+                    android:src="@drawable/dots_vertical" />
+
+            </LinearLayout>
+            <!-- Username TextView -->
+
+
+            <!-- Post Content TextView -->
+            <TextView
+                android:id="@+id/textViewPostContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Post Content"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp"/>
+
+            <!-- Timestamp TextView -->
+            <TextView
+                android:id="@+id/textViewTimestamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Timestamp"
+                android:gravity="end"
+                android:paddingBottom="16dp"/>
+
+            <!-- Border line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/commentsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Improved design for comment input and button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@android:color/white"
+        android:elevation="4dp">
+
+        <EditText
+            android:id="@+id/editTextComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Add a Comment"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:background="@drawable/rounded_corner_layout"
+            android:padding="9dp"/>
+
+        <Button
+            android:id="@+id/buttonPostComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#FD8D14"
+            android:padding="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+</LinearLayout>

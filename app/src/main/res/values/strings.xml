@@ -1,0 +1,74 @@
+<resources>
+    <!--
+   * DatingApp
+    * https://github.com/quintuslabs/DatingApp
+    * Created on 25-sept-2018.
+    * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
+    -->
+    <string name="app_name">SwipePaws</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Firebase database fields -->
+    <string name="dbfemale">female</string>
+    <string name="dbmale">male</string>
+    <string name="title_activity_check_profile_before_matched">activity_checkProfileBeforeMatched
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="match_notification">Match Notification</string>
+    <string name="ok">ok</string>
+    <string name="permission_camera_rationale">Request for camera permission</string>
+    <string name="permission_contacts_rationale">GALLERY PERMISSION</string>
+    <string name="permision_available_camera">camera available</string>
+
+    <!-- introduction pictures-->
+    <integer-array name="img_id_arr">
+        <item>@drawable/img1</item>
+        <item>@drawable/img2</item>
+        <item>@drawable/img3</item>
+        <item>@drawable/img4</item>
+    </integer-array>
+
+        <string-array name="breed_array">
+            <item></item>
+            <item>Askal/Aspin</item>
+            <item>Beagle</item>
+            <item>Boxer</item>
+            <item>Chihuahua</item>
+            <item>Chow Chow</item>
+            <item>Corgi</item>
+            <item>Dachshund</item>
+            <item>Dalmatian</item>
+            <item>Doberman Pinscher</item>
+            <item>German Shepherd</item>
+            <item>Golden Retriever</item>
+            <item>Labrador</item>
+            <item>Pomeranian</item>
+            <item>Poodle</item>
+            <item>Pug</item>
+            <item>Rottweiler</item>
+            <item>Shih Tzu</item>
+            <item>Siberian Husky</item>
+            <item>Pit Bull</item>
+        </string-array>
+
+    <string-array name="age">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        \
+    </string-array>
+
+    <string name="post_author">Author: %1$s</string>
+    <string name="posted_on">Posted on: %1$s</string>
+
+</resources>

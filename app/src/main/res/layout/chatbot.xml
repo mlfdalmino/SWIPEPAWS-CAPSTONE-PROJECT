@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+
+    <!-- Include the top navigation -->
+    <include layout="@layout/layout_top_navigation_back" />
+
+
+
+
+    <!-- ScrollView to hold chat messages -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:background="@android:color/background_light">
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="16dp"
+            android:clipToPadding="false"
+            android:background="@android:color/white"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+
+    </ScrollView>
+
+
+
+
+    <!-- User input and send button section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        >
+
+
+
+
+        <!-- User input EditText -->
+        <EditText
+            android:id="@+id/userInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Write a Question"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:background="@drawable/rounded_corner_layout"
+            android:padding="9dp"/>
+
+
+        <!-- Send button -->
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#FD8D14"
+            android:paddingStart="16dp"
+            android:layout_marginLeft="10dp"
+            android:paddingEnd="16dp"
+            android:onClick="sendMessage"/>
+    </LinearLayout>
+</LinearLayout>

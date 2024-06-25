@@ -1,0 +1,8 @@
+<!-- res/drawable/chat_bubble_received.xml -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#ECE5DD" /> <!-- Adjust color as needed -->
+
+    <corners android:radius="12dp" /> <!-- Adjust the radius to control the roundness of corners -->
+</shape>

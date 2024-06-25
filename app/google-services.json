@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "285961534148",
+    "project_id": "swipepaws-c5724",
+    "storage_bucket": "swipepaws-c5724.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285961534148:android:f0b62c27407a05e792e791",
+        "android_client_info": {
+          "package_name": "com.capstone.project.swipepaws"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285961534148-9d7n70gi1j4f56ttso3hfea0t1m8rm0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV1NNHycia82qTA7oquLyZTnbWJM0etHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285961534148-9d7n70gi1j4f56ttso3hfea0t1m8rm0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285961534148:android:555bbe6f96de898492e791",
+        "android_client_info": {
+          "package_name": "com.quintus.labs.datingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285961534148-9d7n70gi1j4f56ttso3hfea0t1m8rm0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV1NNHycia82qTA7oquLyZTnbWJM0etHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285961534148-9d7n70gi1j4f56ttso3hfea0t1m8rm0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

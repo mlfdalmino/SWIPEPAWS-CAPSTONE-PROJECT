@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_navigation_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <!-- EditText for entering new post -->
+            <EditText
+                android:id="@+id/editTextPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="What's on your mind?"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/rounded_corner_layout"
+                android:padding="12dp" />
+
+            <!-- Button to submit the post -->
+            <Button
+                android:id="@+id/buttonPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#FD8D14"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="end" />
+
+
+
+            <!-- RecyclerView to display posts -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewPosts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="16dp"
+                android:clipToPadding="false"
+                android:background="@android:color/white"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
